@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flash Cards App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+</head>
+<body>
+    <header>Welcome to flashcards app!</header>
+    <div class="main">
+        <h1>Hello</h1>
+        <div id="card">
+            
+        </div>
+        <div>
+            <button onclick="flipCard(flashcards[currentQuestionIndex])" id="flip">Flip the card</button>
+            <button onclick="next(flashcards)" id="next">Next card</button>
+            <button onclick="addDataInput()" id="addData">Add new flashcard</button>
+        </div>
+        <div id="inputData">
+                <form onsubmit="addDataToArray(event)" id="form">
+                    <input type="text" id="question" name="question" placeholder="Question">
+                    <input type="text" name="answer" id="answer" placeholder="Answer">
+                    <button type="submit" id="submitButton">Submit</button>
+                </form> 
+
+         </div>
+    <script src="main.js"></script>
+</body>
+</html>
