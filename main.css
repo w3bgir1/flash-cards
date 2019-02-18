@@ -1,19 +1,42 @@
 body {
-    background: linear-gradient(to right, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%);
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Karla', sans-serif;
 }
 
-.main {
-    width: 70%;
+header {
+    padding: 1em;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#box {
+    display: flex;
+}
+footer {
+    margin: 1em;
+    text-align: center;
+}
+
+.main,
+#addPile {
+    width: 50%;
     background: rgba(255, 255, 255, 0.7);
     color: #555555;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 5em auto;
+    padding: 1em;
 }
 
 #card {
     background: white;
     margin: 0 auto;
-    width: 80%;
+    max-width: 80%;
     padding: 1em;
     text-align: center;
     font-size: 3em;
@@ -21,12 +44,16 @@ body {
 }
 
 button {
+    border: 0;
     margin: 2em;
     font-size: 1em;
     padding: 0.5em;
     outline: none;
     border-radius: 5px;
-    background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(58,179,255,1) 47%,rgba(61,55,232,1) 100%);
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #inputData {
@@ -37,4 +64,13 @@ button {
 #form {
     padding: 1em;
 
+}
+
+#pilesList {
+    max-width: 30%;
+    padding: 3em;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
 }
